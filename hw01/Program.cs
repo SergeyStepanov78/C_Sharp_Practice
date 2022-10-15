@@ -3,13 +3,16 @@
 //a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.Write("Enter first number");
+Console.Write("Enter first number: ");
 int firstnumber = Convert.ToInt32(Console.ReadLine());
-Console.Write("Enter second number");
+Console.Write("Enter second number: ");
 int secondnumber = Convert.ToInt32(Console.ReadLine());
 
 if (firstnumber > secondnumber)
 {
-    Console.WriteLine(firstnumber);
+    Console.WriteLine("Большее число: " + firstnumber + " " + "Меньшее число: " + secondnumber);
 }
-Console.WriteLine(secondnumber);
+else 
+{
+    Console.WriteLine("Меньшее число: " + firstnumber + " " + "Большее число: " + secondnumber);
+}
