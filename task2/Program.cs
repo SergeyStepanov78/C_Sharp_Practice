@@ -3,7 +3,7 @@
 Console.WriteLine("Enter first number: ");
 int firstnumber = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Enter secoond number: ");
+Console.WriteLine("Enter second number: ");
 int secondnumber = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Enter third number: ");
