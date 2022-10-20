@@ -1,16 +1,10 @@
-﻿// Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+﻿// 3. Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
-// Console.Write("Введите целое число: ");
-// int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите номер дня недели от 1 до 7: ");
+int day = Convert.ToInt32(Console.ReadLine());
 
-int number = new Random().Next(1, 100);
-Console.WriteLine(number);
+if (day >= 1 && day <= 5) Console.WriteLine("Не выходной");
 
-if (number % 2 == 0)
-{
-    Console.WriteLine("Вы ввели четное число");
-}
-else
-{
-    Console.WriteLine("Вы ввели нечетное число");
-}
+else if (day == 6 || day == 7) Console.WriteLine("Выходной");
+
+else Console.WriteLine("Номер не соответствует никакому дню недели");

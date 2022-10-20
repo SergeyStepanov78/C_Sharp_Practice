@@ -1,25 +1,17 @@
-﻿// Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+﻿// 2. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-Console.WriteLine("Enter first number: ");
-int firstnumber = Convert.ToInt32(Console.ReadLine());
+// int number2 = Convert.ToInt32(new Random().Next(100, 110));
+// Console.WriteLine(number2);
 
-Console.WriteLine("Enter second number: ");
-int secondnumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter three-digit number: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Enter third number: ");
-int thirdnumber = Convert.ToInt32(Console.ReadLine());
+if (number2 / 100 == 0) Console.WriteLine("Третьей цифры нет");
 
-if (firstnumber > secondnumber && firstnumber > thirdnumber)
+else if (number2 / 100 > 9) Console.WriteLine("Вы ввели не трехзначное число");
+
+else
 {
-    Console.WriteLine("Max value: " + firstnumber);
-}
-
-else if (secondnumber > firstnumber && secondnumber > thirdnumber)
-{
-    Console.WriteLine("Max value: " + secondnumber);
-}
-
-else 
-{
- Console.WriteLine("Max value: " + thirdnumber);
+number2 = number2 % 10;
+Console.WriteLine($"третья цифра это {number2}");
 }
