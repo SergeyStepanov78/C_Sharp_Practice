@@ -12,6 +12,6 @@ else if (number2 / 100 > 9) Console.WriteLine("Вы ввели не трехзн
 
 else
 {
-number2 = number2 % 10;
-Console.WriteLine($"третья цифра это {number2}");
+    number2 = number2 % 10;
+    Console.WriteLine($"третья цифра это {number2}");
 }
