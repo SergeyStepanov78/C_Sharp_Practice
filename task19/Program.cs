@@ -34,23 +34,23 @@
 Решение-2 используя метод
 */
 
-int FindDigitsFromNumber(int number)
-{
-    int digit1 = 0, digit2 = 0, digit4 = 0, digit5 = 0;
-    if (number >= 10000 && number < 100000)
-    {
-        digit1 = number / 10000;
-        digit2 = number / 1000 % 10;
-        digit4 = number / 10 % 10;
-        digit5 = number % 10;
-    }
-    return digit1; // как вернуть все четыре значения? и надо ли?
-}
-Console.Write("Enter 5-digit number: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// int FindDigitsFromNumber(int number)
+// {
+//     int digit1 = 0, digit2 = 0, digit4 = 0, digit5 = 0;
+//     if (number >= 10000 && number < 100000)
+//     {
+//         digit1 = number / 10000;
+//         digit2 = number / 1000 % 10;
+//         digit4 = number / 10 % 10;
+//         digit5 = number % 10;
+//     }
+//     return digit1; // как вернуть все четыре значения? и надо ли?
+// }
+// Console.Write("Enter 5-digit number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-int result = FindDigitsFromNumber(number);
-if (digit1 == digit5 && digit2 == digit4) // и как теперь с digit работать?
-{
+// int result = FindDigitsFromNumber(number);
+// if (digit1 == digit5 && digit2 == digit4) // и как теперь с digit работать?
+// {
 
-}
+// }
