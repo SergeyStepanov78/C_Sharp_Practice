@@ -9,7 +9,7 @@ void SumDigitsInNumber(int number)
 {
     int lastDigit = 0;
     int sum = 0;
-    while (Math.Abs(number) > 0)
+    while (number > 0)
     {
         lastDigit = number % 10;
         sum = sum + lastDigit;
